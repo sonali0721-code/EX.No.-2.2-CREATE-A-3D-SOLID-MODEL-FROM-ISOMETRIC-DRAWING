@@ -11,100 +11,81 @@ To create a 3Dmodel from the given isometric drawing using fusion 360 tool.
 3. 16 GB of RAM (integrated graphics recommend 1 GB or more)
 4. 2.5 Mbps or faster download; 500 Kbps or faster upload 
 
-## STEP-2:  Select the Sketch Plane
- Select the TOP (XY) Plane
+step 1:
 
-## STEP-3: Create a Sketch 
-1.  Select Sketch > Rectangle > Center Rectangle.
-2.  Now hover over the origin (center) of the sketch. You should see the cursor snap to this location.
-3.  Click once to begin placing the rectangle.
-4.  Type the Tab button and enter the values 56 mm and 18mm for the width and height respectively.
-5.  Select Sketch > Arc > Center point arc.
-6.  Click again to place the value (Both end of the sketch). You should see the cursor snap to this location
-7.  Type the Tab button and enter the values R 18mm
-8.  Select Sketch > circle > Center point circle.
-9.  Click again to place the value (Both side of the sketch). You should see the cursor snap to this location
-10. Type the Tab button and enter the values dia 16mm
-11. Click again to place the sketch.
-12. Click Finish Sketch after completing.
 
-## STEP-4: Extrude Sketch in XY Plane
-1.	Select Extrude.
-2.	Select the sketch.
-3.	Click again to place the value.
-4.	Type in the value of 8mm. 
-5.	Press ENTER to accept the value.
+Main body (rounded profile)
+Open Fusion 360 and select Design → Solid workspace.
+Click Create Sketch and select the Front (XZ) plane.
+Choose Sketch → Line and draw the main rectangular portion of the side profile with a height of 32 mm.
+Maintain a distance of 36.28 mm from the centre of the rounded end to the rear shoulder.
+Choose Sketch → Arc → 3-Point Arc and construct the semicircular front portion with a radius of 16 mm (R16).
+<img width="517" height="395" alt="WhatsApp Image 2026-11-25 at 8 23 33 AM" src="https://github.com/user-attachments/assets/582b25b6-4e37-412a-b9f5-081430830454" />
+Connect the arc to the straight edges to complete the closed side profile.
+Click Finish Sketch.
+Select Extrude, choose the closed profile and enter 40 mm as the extrusion distance.
+Press Enter to create the main solid body.
 
-## STEP-5:  Start the sketch command
-   Select Sketch > Create Sketch.
+Step 2:
 
-## STEP-6: Select the Sketch Plane
-	Select the TOP SURFACE of the 3D block 
-  
-## STEP-7: Create a RECTANGLE 
-1.	Select Sketch > RECTANGLE  > CENTER RECTANGLE.
-2.	Now hover over the origin (center) of the sketch. You should see the cursor snap to this location.
-3.	Click once to begin placing the RECTANGLE.
-4.	Type the Tab button and enter the values 40mm and 10mm for the width and height respectively
-5.	Click again to place the RECTANGLE.
-6.	Click Finish Sketch after completing.
+Create the central gap between the fork arms
+Select the top face of the main body and click Create Sketch.
+Choose Sketch → Rectangle → Two-Point Rectangle.
+Draw a rectangular profile along the centre of the body.
+Set the width of the rectangle to 18 mm and position it equally on both sides, leaving 11 mm on each side of the 40 mm overall width.
+Extend the rectangular profile from the front end up to a point 11 mm before the rear shoulder.
+Click Finish Sketch.
+Select Extrude, select the rectangular profile and choose Cut as the operation.
+Set the cut distance to 32 mm so that the central material is removed through the entire height.
+Press Enter. This creates two parallel fork arms connected by the rear portion.
 
-## STEP-8:  Extrude RECTANGLE 
-1.	Select Extrude.
-2.	Select the Rectangle sketch.
-3.	Click again to place the value.
-4.	Type in the value of 32mm. 
-5.	Press ENTER to accept the value.
+Step 3:
 
-## STEP-9: Create a TRIANGLE 
-1.	Select Sketch > TRIANGLE > CENTER TRIANGLE .
-2.	Now hover over the origin (center) of the sketch. You should see the cursor snap to this location.
-3.	Click once to begin placing the TRIANGLE.
-4.	Type the Tab button and enter the values 32mm and 12mm for the width and height respectively
-5.	Click again to place the TRIANGLE.
-6.	Click Finish Sketch after completing.
 
-## STEP-10:  Extrude TRIANGLE
-1.	Select Extrude.
-2.	Select the TRIANGLE sketch.
-3.	Click again to place the value.
-4.	Type in the value of 6mm in both direction option. 
-5.	Press ENTER to accept the value.
+Create the circular holes
+Select the side face of the fork body and click Create Sketch.
+Choose Sketch → Circle → Center Diameter Circle.
+Place the centre of the circle at the centre of the rounded end.
+Enter 16 mm as the diameter (Ø16).
+Click Finish Sketch.
+Select Extrude, choose the circular profile and set the operation to Cut.
+Extend the cut through the full 40 mm width of the body.
+Press Enter to create the circular holes through both fork arms.
 
-## STEP-11: Create a PENTAGON 
-1.	Select Sketch > polygon > circumscribed polygon.
-2.	Now hover over the origin (center) of the sketch. You should see the cursor snap to this location.
-3.	Click once to begin placing the polygon.
-4.	Type the Tab button and enter the values 40mm and 30mm, for the width and height respectively and Choose 3 Side
-5.	Click again to place the polygon.
-6.	Click Finish Sketch after completing.
+Step 4:
 
-## STEP-12: Extrude PENTAGON
-1.	Select Extrude.
-2.	Select the PENTAGON sketch.
-3.	Click again to place the value.
-4.	Type in the value of 10mm. 
-5.	Press ENTER to accept the value.
 
-## STEP-13: Create a CIRCLE 
-1.	Select Sketch > CIRCLE > CENTER CIRCLE.
-2.	Now hover over the origin (Pentagan end side) of the sketch. You should see the cursor snap to this location.
-3.	Click once to begin placing the CIRCLE.
-4.	Type the Tab button and enter the value DIA 30mm and 20mm, inner and outer diameter respectively .
-5.	Click again to place the circle.
-6.	Click Finish Sketch after completing.
+Create the rear cylindrical shaft
+Select the rear vertical face of the connecting portion and click Create Sketch.
+Choose Sketch → Circle → Center Diameter Circle.
+Place the circle at the centre of the rear face.
+Enter 18 mm as the diameter (Ø18).
+Click Finish Sketch.
+Select Extrude and choose the circular profile.
+Enter 32 mm as the extrusion distance, extending outward from the rear face.
+Select Join as the operation to connect the cylindrical shaft to the main body.
+Press Enter to complete the shaft.
 
-## STEP-14:  Extrude CIRCLE 
-1.	Select Extrude.
-2.	Select the pentogan sketch.
-3.	Click again to place the value.
-4.	Type in the value of 10mm on both side. 
-5.	Press ENTER to accept the value.
+Step 5:
+
+Final inspection and drawing
+Use the Orbit tool to inspect the component from different directions.
+Check that the two fork arms have a thickness of 11 mm each and a central gap of 18 mm.
+Verify the circular hole diameter of 16 mm and the shaft diameter of 18 mm.
+Confirm the overall width of 40 mm, height of 32 mm and shaft length of 32 mm.
+Apply the required appearance and save the completed model.
+Generate the front, top and end views along with the isometric view using the drawing workspace.
+
+
+
+
 
 ## INPUT:
 ![image](https://user-images.githubusercontent.com/113594316/198523331-05ace360-502b-4569-b9b4-31c60e3cd554.png)
 
 Output:
+
+<img width="1030" height="707" alt="WhatsApp Image 2026-11-25 at 8 18 09 AM" src="https://github.com/user-attachments/assets/5079a1be-9420-48c2-a813-ce1c24ad9e7e" />
 
 ## RESULT: 
 Thus, the 3D model is created from given isometric drawing.
